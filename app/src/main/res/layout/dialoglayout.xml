@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/moneyimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/money"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/light"
+        android:layout_toRightOf="@+id/moneyimg"
+        android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cash">
+
+        <ImageView
+            android:id="@+id/paypalimg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/paypal"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paypal"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor=" #3b7bbf"
+            android:layout_toRightOf="@+id/paypalimg"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cardnolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paypal"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/cardno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter card no"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColorHint=" #3b7bbf"/>
+
+        <Button
+            android:id="@+id/donebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/buttons"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/cardno"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

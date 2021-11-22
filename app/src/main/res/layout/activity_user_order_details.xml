@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserOrderDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/light"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_action_call"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+   <!-- <RelativeLayout
+        android:id="@+id/orderbyinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/orderby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderBy:"
+            android:textColor="@color/light"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtorderby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/orderby"
+            android:text="OrderBy"
+            android:textColor="@color/light"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/orderbyphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textColor="@color/light"
+            android:textSize="16sp"
+            android:layout_below="@+id/txtorderby"/>
+
+        <TextView
+            android:id="@+id/txtorderbyphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="@color/light"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/orderbyphone"
+            android:layout_below="@+id/txtorderby"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/orderbyaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textColor="@color/light"
+            android:textSize="16sp"
+            android:layout_below="@+id/txtorderbyphone"
+            />
+
+        <TextView
+            android:id="@+id/txtorderbyaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="t is a long established fact that a reader\nwill be distracted by the readable content\nof a page when looking at its layout."
+            android:textColor="@color/light"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/orderbyaddress"
+            android:layout_below="@+id/txtorderbyphone"
+            android:layout_marginLeft="5dp"
+            />
+
+
+    </RelativeLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userorderdetailsRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/userorderstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Progress"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>

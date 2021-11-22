@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "987363126454",
+    "firebase_url": "https://apporter-d80e3.firebaseio.com",
+    "project_id": "apporter-d80e3",
+    "storage_bucket": "apporter-d80e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987363126454:android:5bcb8b16611f9681474a17",
+        "android_client_info": {
+          "package_name": "com.khtech.apporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987363126454-u28du31r2iiv7lpoq449tt2h69m0b2kj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khtech.apporter",
+            "certificate_hash": "03f36e1690acf864f392f2385ca188a61a5f2fec"
+          }
+        },
+        {
+          "client_id": "987363126454-7ridfifeikn7r1pinr6dbn2hap7qa50j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt9XwIx384vonZ5bLd0L_4F-p-fXUp6Qw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987363126454-7ridfifeikn7r1pinr6dbn2hap7qa50j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

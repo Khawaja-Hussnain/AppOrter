@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    app:cardElevation="15dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OrderID:"
+        android:textColor="@color/light"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtorderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000000"
+        android:textColor="@color/light"
+        android:layout_toRightOf="@+id/orderid"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtstorename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storename"
+        android:textColor="@color/light"
+        android:layout_below="@+id/txtorderid"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:textColor="@color/light"
+        android:layout_below="@+id/txtstorename"
+        android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/txtamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount:"
+            android:textColor="@color/light"
+            android:layout_below="@+id/txtstorename"
+            android:layout_toRightOf="@+id/amount"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/light"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/txtorderid"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/orderstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Status"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/amount"
+            android:layout_alignBaseline="@id/amount"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

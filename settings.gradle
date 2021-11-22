@@ -1,0 +1,2 @@
+rootProject.name='AppOrter'
+include ':app'
